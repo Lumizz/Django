@@ -3,8 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
   </head>
   <body>
       <h1>This is our first page</h1>
+      <a href="{% url 'about' %}">Go to about page</a>
+      <button type="button" name="button" onclick="myFunc()">Change color</button>
+      <img src="{% static 'elephant.jpg' %}" alt="">
+
+
+      <form class="" action="{% url 'result' %}">
+        {% csrf_token %}
+        <input type="text" name="user_input" >
+        <input type="submit" name="" value="Click Me">
+      </form>
+
+
+
+
+
+
+      <script type="text/javascript" src="{% static 'main.js' %}"></script>
   </body>
 </html>

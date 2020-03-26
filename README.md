@@ -1,5 +1,7 @@
 -- Django Set up--
 
-mkdir <project name>
-cd <project name>
 django-admin startproject <project name>
+
+cd <project name>
+
+python3 manage.py runserver
