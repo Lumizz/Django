@@ -2,10 +2,13 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Prediction</title>
   </head>
   <body>
     <h1>This is result page</h1>
-    <p>{{home_input}}</p>
+    <a href="{% url 'home' %}">Go Back Home</a>
+    <p>Result : </p>
+    <p>{{prediction}}</p>
+
   </body>
 </html>
